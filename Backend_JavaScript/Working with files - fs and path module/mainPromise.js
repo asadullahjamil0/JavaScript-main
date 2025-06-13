@@ -5,7 +5,7 @@ let a = await fs.readFile("asd2.txt", (e, d) => {
 
 })
 
-let b = await fs.writeFile("asd2.txt", "\n\n\n\n\nTHis is promise", ()=>{
+let b = await fs.appendFile("asd2.txt", "\n\n\n\n\nTHis is promise", ()=>{
     console.log("Done!");
 })
 console.log(a, b);
