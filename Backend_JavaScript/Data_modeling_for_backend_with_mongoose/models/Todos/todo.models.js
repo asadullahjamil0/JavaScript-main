@@ -16,12 +16,12 @@ const todoSchema = new mongoose.schema(
     },
     subTodos: [
       {
-        type: mongoose.schema.Types.objectId,
-        ref: 'SubTodo',
+        type: mongoose.Schema.Types.ObjectId,
+        refer: 'SubTodo',
       }, // Array of sub-todos
     ],
   },
   { timestamps: true }
 );
 
-export const Todo = new mongoose.model('Todo', todoSchema);
+export const Todo = mongoose.model('Todo', todoSchema);
