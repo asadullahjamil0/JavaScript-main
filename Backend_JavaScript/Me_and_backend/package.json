@@ -1,0 +1,19 @@
+{
+  "name": "me_and_backend",
+  "version": "1.0.0",
+  "description": "a backend with me",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "AsadUllah",
+  "keywords": [
+    "backend",
+    "javaScript"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
