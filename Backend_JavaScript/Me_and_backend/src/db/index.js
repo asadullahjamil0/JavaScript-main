@@ -9,7 +9,7 @@ dotenv.config({
 const connectDB = async () => {
   try {
     const connectionInstance = await mongoose.connect(
-      `${process.env.MONGODB_URI}`
+      `${process.env.MONGODB_URI}/${DB_NAME}`
     );
     console.log(
       `MongoDb connected !! DB HOST: ${connectionInstance.connection.host}`
