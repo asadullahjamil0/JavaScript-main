@@ -5,8 +5,9 @@ dotenv.config({
   path: "./env",
 });
 
-connectDB();
+console.log(process.env.MONGODB_URI);
 
+connectDB();
 
 /*
 import express from "express";
