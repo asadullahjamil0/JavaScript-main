@@ -6,6 +6,7 @@ dotenv.config({
   path: "./env",
 });
 
+// Code for connecting database in seperate file for readability
 const connectDB = async () => {
   try {
     const connectionInstance = await mongoose.connect(
