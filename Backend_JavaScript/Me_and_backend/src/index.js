@@ -10,9 +10,9 @@ console.log(process.env.MONGODB_URI);
 
 connectDB()
   .then(() => {
-    app.on("errotr", (error) => {
+    app.on("error", (error) => {
       console.log("ERROR: ", error);
-      throw error;f
+      throw error;
     });
     app.listen(process.env.PORT || 8000, () => {
       console.log("Server is running at port:", process.env.PORT);
