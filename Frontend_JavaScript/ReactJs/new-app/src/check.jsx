@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-function Check() {
+function Check(props) {
   const [count, setCount] = useState(0);
   let name = "Asad Ullah Jamil Ch";
   const car_obj = {
@@ -19,6 +19,8 @@ function Check() {
       <button onClick={() => setCount((count) => count + 1)}>
         count{count}
       </button>
+      <h1>This is props : {props.year}</h1>
+      <h3>This is obj : {props.brand.name}</h3>
     </>
   );
 }
