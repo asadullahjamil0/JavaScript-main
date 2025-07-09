@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Check from "./check";
 import Header from "./Header";
+import ArrowFunction from "./arrowFunction";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,8 +36,15 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Check year="2002" brand={car_obj} model="grande" isMarried={false} arr={arr}/>
+      <Check
+        year="2002"
+        brand={car_obj}
+        model="grande"
+        isMarried={false}
+        arr={arr}
+      />
       <Header />
+      <ArrowFunction desc="arrowFunction"/>
     </>
   );
 }
