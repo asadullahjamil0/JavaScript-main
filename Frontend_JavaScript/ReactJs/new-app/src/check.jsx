@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import PropTypes from "prop-types";
 
 function Check(props) {
   const [count, setCount] = useState(0);
@@ -8,6 +9,11 @@ function Check(props) {
     name: "Ford",
     year: "2019",
   };
+  const friendsList = [];
+  for (let i = 0; i < props.arr.length; i++) {
+    friendsList.push(<li key={i}>{props.arr[i]}</li>);
+  }
+
   return (
     <>
       <h1>My name is {name}</h1>
@@ -19,10 +25,25 @@ function Check(props) {
       <button onClick={() => setCount((count) => count + 1)}>
         count{count}
       </button>
-      <h1>This is props : {props.year}</h1>
+      <h3>This is number : {props.year}</h3>
       <h3>This is obj : {props.brand.name}</h3>
+      <h3>This is string : {props.model}</h3>
+      <h3>This is boolean: {props.isMarried.toString()}</h3>
+      <h3>This is boolean: {String(props.isMarried)}</h3>
+      <p>These are my friends: {friendsList}</p>
     </>
   );
 }
+
+Check.PropTypes = {
+  year: PropTypes.number,
+  model: PropTypes.string,
+  brand: PropTypes.object,
+  isMarried: PropTypes.bool,
+};
+
+Check.defaultProps = {
+  year: 2002,
+};
 
 export default Check;

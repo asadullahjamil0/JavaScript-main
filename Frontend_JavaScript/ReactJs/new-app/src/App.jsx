@@ -7,6 +7,7 @@ import Header from "./Header";
 
 function App() {
   const [count, setCount] = useState(0);
+  const arr = ["Mujahid", "sanwar", "ubaida", "Ayesha"];
 
   const car_obj = {
     name: "Toyota",
@@ -34,7 +35,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Check year="2002" brand={car_obj} />
+      <Check year="2002" brand={car_obj} model="grande" isMarried={false} arr={arr}/>
       <Header />
     </>
   );
