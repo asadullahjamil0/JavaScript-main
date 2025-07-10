@@ -4,7 +4,9 @@ class ClassComponent extends Component {
   render() {
     return (
       <>
-        <h1>This is class Component</h1>
+        <h1>This is Class Component</h1>
+        <h2>My name is {this.props.name}</h2>
+        {this.props.children}
       </>
     );
   }

@@ -21,7 +21,16 @@ function App() {
       <h1>Vite + React</h1>
       <DefaultExport />
       <NamedExport2 />
-      <ClassComponent />
+      <ClassComponent name="Asad Ullah Jamil" />
+      <ClassComponent name="Hafeez">
+        <h2>This is Children props</h2>
+        <button>Submit</button>
+        <ul>
+          <li>Zain</li>
+          <li>Mubashir</li>
+          <li>Haider</li>
+        </ul>
+      </ClassComponent>
       <FunctionComponent />
     </>
   );
