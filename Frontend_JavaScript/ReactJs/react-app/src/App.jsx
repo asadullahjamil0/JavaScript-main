@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { DefaultExport, NamedExport2 } from "./namedExport";
 import ClassComponent, { FunctionComponent } from "./ClassComponent";
+import ConsructorInClass from "./ConsructorInClass";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,6 +33,7 @@ function App() {
         </ul>
       </ClassComponent>
       <FunctionComponent />
+      <ConsructorInClass name="Asad Ullah" />
     </>
   );
 }
