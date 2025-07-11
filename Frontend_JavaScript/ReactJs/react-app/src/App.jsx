@@ -5,6 +5,7 @@ import "./App.css";
 import { DefaultExport, NamedExport2 } from "./namedExport";
 import ClassComponent, { FunctionComponent } from "./ClassComponent";
 import ConsructorInClass from "./ConsructorInClass";
+import Counter from "./Counter.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +21,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <Counter age = {23}/>
       <DefaultExport />
       <NamedExport2 />
       <ClassComponent name="Asad Ullah Jamil" />
