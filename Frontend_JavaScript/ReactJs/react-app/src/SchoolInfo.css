@@ -1,0 +1,21 @@
+table, th, td{
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: rgba(155, 155, 155, 0.148);
+   font-family: 'helvetica';
+} 
+
+td, th{
+    border-bottom: 1px solid white;
+}
+
+table{
+    margin:350px 0px 350px 10px;
+}
+
+th, td:hover {background-color: #969696;}
+
+tr:nth-child(even){
+    background-color: #181818;
+}
