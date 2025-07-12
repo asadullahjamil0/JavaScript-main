@@ -7,6 +7,8 @@ import ClassComponent, { FunctionComponent } from "./ClassComponent";
 import ConsructorInClass from "./ConsructorInClass";
 import Counter from "./Counter.jsx";
 import SchoolInfo from "./SchoolInfo.jsx";
+import DestructuringPropsAndState from "./DestructuringPropsAndState.jsx";
+import ClassComponentDesctructuring from "./ClassComponentDesctructuring.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -105,11 +107,17 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <DestructuringPropsAndState
+        name="AsadUllah Jamil"
+        age={23}
+        city={"sheikhupura"}
+      />
+      <ClassComponentDesctructuring />
       <SchoolInfo School={schoolObj} />
       <Counter age={23} />
-      <DefaultExport />
-      <NamedExport2 />
-      <ClassComponent name="Asad Ullah Jamil" />
+      {/* <DefaultExport /> */}
+      {/* <NamedExport2 /> */}
+      {/* <ClassComponent name="Asad Ullah Jamil" />
       <ClassComponent name="Hafeez">
         <h2>This is Children props</h2>
         <button>Submit</button>
@@ -118,9 +126,9 @@ function App() {
           <li>Mubashir</li>
           <li>Haider</li>
         </ul>
-      </ClassComponent>
-      <FunctionComponent />
-      <ConsructorInClass name="Asad Ullah" />
+      </ClassComponent> */}
+      {/* <FunctionComponent />
+      <ConsructorInClass name="Asad Ullah" /> */}
     </>
   );
 }
