@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// we are mounting in class component
 export default class Mouting1 extends Component {
 
     constructor(props) {
