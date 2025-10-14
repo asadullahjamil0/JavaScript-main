@@ -1,7 +1,7 @@
 
-const Navbar = () => {
+const Navbar = ({ setCategory }) => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme = "dark">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"><span className="badge text-dark bg-light fs-4">News App</span></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,16 +10,19 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <div className="nav-link cursorPointer" onClick={() => setCategory("business")}>Business</div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                            <div className="nav-link cursorPointer" onClick={() => setCategory("health")}>Health</div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
+                            <div className="nav-link cursorPointer" onClick={() => setCategory("sports")}>Sports</div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <div className="nav-link cursorPointer" onClick={() => setCategory("technology")}>Technology</div>
+                        </li>
+                        <li className="nav-item">
+                            <div className="nav-link cursorPointer" onClick={() => setCategory("entertainment")}>Entertainement</div>
                         </li>
                     </ul>
                 </div>
