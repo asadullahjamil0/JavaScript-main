@@ -53,7 +53,7 @@
 // console.log(arr3)
 
 // Function to merge a string
-let str1 = "AsadU"
+// let str1 = "AsadU"
 // let str2 = "Chaudhry"
 // let str3 = "";
 
@@ -71,16 +71,52 @@ let str1 = "AsadU"
 // console.log(str3);
 
 // checking length of an array
-let arr5 = [,,,]
-console.log(arr5.length)
+// let arr5 = [,,,]
+// console.log(arr5.length)
 
 // What is the difference between map method and forEach method in javaScript
 
 // How to avoid deep copy
-const obj = {
-    age: 23
-}
+// const obj = {
+//     age: 23
+// }
 
-let newObj = {...a}
-newObj.age = 2345
-console.log(newObj.age)
+// let newObj = {...a}
+// newObj.age = 2345
+// console.log(newObj.age)
+
+
+// How to avoid deep copy
+// const obj = {
+//     age: 23
+// }
+
+// let newObj = {...a}
+// newObj.age = 2345
+// console.log(newObj.age)
+
+// How to convert obj entries into an array
+// const obj = {
+//     a:1,
+//     b:2,
+//     c:3,
+//     d:4
+// }
+
+// console.log(Object.entries(obj))
+
+// How to make different arrays based on data types from one array
+// const arr = [100, 'A', "AsadUllah", 300, 'C']
+
+// const numberArray = []
+// const stringArray = []
+// arr.forEach((ele) =>{
+//     if(typeof(ele) == "number"){
+//         numberArray.push(ele)
+// } else if (typeof(ele) == "string"){
+//         stringArray.push(ele)
+// }
+// })
+
+// console.log(numberArray)
+// console.log(stringArray)
