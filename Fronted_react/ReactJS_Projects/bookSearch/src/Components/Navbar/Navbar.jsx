@@ -20,6 +20,17 @@ const Navbar = () => {
             <HiOutlineMenuAlt3 size={35} style={{ color: `${ToggleMenu ? "#fff" : "#010101"}` }} />
           </button>
         </div>
+
+        <div className={ToggleMenu ? "navbar-collapse show-navbar-collapse" : "navbar-collapse"}>
+          <ul className='navbar-nav'>
+            <li className='navbar-item'>
+              <Link to="book" className='nav-link  text-uppercase text-white fs-22 fw-6 ls-1' >Home</Link>
+            </li>
+            <li className='nav-item'>
+              <Link to="about" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>About</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   )
