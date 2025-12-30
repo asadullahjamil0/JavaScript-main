@@ -23,3 +23,17 @@
 // Question 10: What is Dynamic Routing.
 // Question 11: What is Actual DOM and Virtual DOM.
 // Question 12: Why React is fast than Angular or any other framework/library.
+
+// Question 5: get the maximum product of two numbers from an array.
+const arr =[1, 2, 3, 4, 5, 6, 3, 12]
+let finalNumbe = 1;
+
+for (let i = 0; i < arr.length; i++){
+        let temp = arr[i] * arr[i+1];
+        
+        if (temp > finalNumbe) {
+            finalNumbe = temp;
+        }
+}
+
+console.log(finalNumbe);
